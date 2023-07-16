@@ -26,7 +26,7 @@ public class RoomCallOutPost {
          HttpRequest request = new HttpRequest();
         request.setEndpoint('https://medunna.com/api/rooms');
         request.setMethod('GET');
-        request.setHeader('Authorization', 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZXZlbG9wZXJzNjY2NyIsImF1dGgiOiJST0xFX0FETUlOIiwiZXhwIjoxNjkxNzcyNDkxfQ.poC2fY19mTnEUtD6J7fW9ZmLKni6p16-4oGRbw_zb2P1Ha7LilwznW7pxOc99r6C31V9LbGUbqbctFXzyqc5-w');
+        request.setHeader('Authorization', 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZXZlbG9wZXJzNjY2NyIsImF1dGgiOiJST0xFX0FETUlOIiwiZXhwIjoxNjkxNzcyNDkxfQ.poC2fY19mTnEUtD6J7fW9ZmLKni6p16-4oGRbw_zb2P1Ha7LilwznW7pxOc99r6C31V9LbGUbqbctFXzyqc5-w');
         request.setHeader('Content-Type', 'application/json');
         request.setBody(json);
         
