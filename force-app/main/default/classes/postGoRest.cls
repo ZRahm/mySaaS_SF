@@ -7,7 +7,7 @@ public class postGoRest {
         request.setMethod('POST');
         request.setEndpoint('https://gorest.co.in/public/v2/users');
         request.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        request.setHeader('Authorization', 'Bearer 04cd99416d49951ef40e5fa73247cc725ab1f870f9aa5e108ea2c9a650c12ab0');
+        request.setHeader('Authorization', '04cd99416d49951ef40e5fa73247cc725ab1f870f9aa5e108ea2c9a650c12ab0');
         request.setBody('{"name": "Alisa","email": "jkl12@123gmail.com","gender": "female","status": "active"}');
         
         HttpResponse response = http.send(request);
