@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Home_Page_Default</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>TPE_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>TPE Logistics</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Container__c</tabs>
+    <tabs>Tenant__c</tabs>
+    <tabs>TPE_Order__c</tabs>
+    <tabs>PTO_Requests__c</tabs>
+    <tabs>recruiter_bonus__c</tabs>
+    <tabs>Zarina__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>TPE_Logistics_UtilityBar</utilityBar>
+</CustomApplication>
