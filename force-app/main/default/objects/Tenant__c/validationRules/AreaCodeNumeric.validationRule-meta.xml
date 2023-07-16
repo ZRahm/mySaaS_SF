@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AreaCodeNumeric</fullName>
+    <active>true</active>
+    <description>Are code must not be empty and it must be numeric</description>
+    <errorConditionFormula>ISBLANK( AreaCode__c )  || NOT(ISNUMBER( AreaCode__c )) || 
+
+ LEN( AreaCode__c )  &lt;&gt; 5</errorConditionFormula>
+    <errorDisplayField>AreaCode__c</errorDisplayField>
+    <errorMessage>Are code must not be empty and it must be numeric</errorMessage>
+</ValidationRule>

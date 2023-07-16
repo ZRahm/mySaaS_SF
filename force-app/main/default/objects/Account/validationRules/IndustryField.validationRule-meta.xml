@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IndustryField</fullName>
+    <active>true</active>
+    <description>When a user creates &apos;Industry&apos; field as &apos;Agriculture&apos;, &apos;Ownership&apos; field cannot be &apos;Public&apos;</description>
+    <errorConditionFormula>IF( TEXT( Industry ) = &apos;Agriculture&apos;, TEXT(  Ownership  ) = &apos;Public&apos;, false)</errorConditionFormula>
+    <errorDisplayField>Ownership</errorDisplayField>
+    <errorMessage>When  &apos;Industry&apos; field is &apos;Agriculture&apos;, &apos;Ownership&apos; field cannot be &apos;Public&apos;</errorMessage>
+</ValidationRule>

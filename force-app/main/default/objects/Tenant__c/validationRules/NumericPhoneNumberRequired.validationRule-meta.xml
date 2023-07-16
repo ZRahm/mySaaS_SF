@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumericPhoneNumberRequired</fullName>
+    <active>true</active>
+    <description>Phone field must contain numbers only</description>
+    <errorConditionFormula>NOT( ISNUMBER( Phone__c ) )</errorConditionFormula>
+    <errorDisplayField>Phone__c</errorDisplayField>
+    <errorMessage>Phone field must contain numbers only</errorMessage>
+</ValidationRule>
