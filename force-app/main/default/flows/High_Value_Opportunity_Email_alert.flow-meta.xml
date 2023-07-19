@@ -102,8 +102,8 @@ Thanks</text>
     </textTemplates>
     <textTemplates>
         <name>emailSubject</name>
-        <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;High Value Opportunity Alert!&lt;/p&gt;</text>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>High Value Opportunity Alert!</text>
     </textTemplates>
     <variables>
         <name>emailRecipient</name>
