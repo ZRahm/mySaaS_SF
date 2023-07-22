@@ -74,6 +74,10 @@
                 <behavior>Edit</behavior>
                 <field>Activation__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PhoneIsValid__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
