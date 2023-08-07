@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>That 3rd party system will be our mock external system to integrate with Salesforce. 
+GoRest has data in its database and we will call those data to the Salesforce by using apex class and http methods.</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://gorest.co.in</url>
+</RemoteSiteSetting>
