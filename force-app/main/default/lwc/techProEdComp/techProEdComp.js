@@ -11,6 +11,7 @@ export default class TechProEdComp extends LightningElement {
         console.log("valchange methos is invoked");
         console.log(event);
         console.log(event.target.value);
+        this.name = event.target.value;
     }
 
 
