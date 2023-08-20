@@ -12,6 +12,9 @@ export default class TechProEdComp extends LightningElement {
     punchline;
     type;
 
+    word ="";
+    res;
+
     valChange(event){
         console.log("valchange methos is invoked");
         console.log(event);
@@ -36,7 +39,20 @@ callRest(){
      });
 }
 
+isPalindrome(event){
+    console.log(event);
+    console.log(event.target.value);
+this.word = event.target.value;
+}
     
+isSubmit(){
+    console.log('Submit function');
+    console.log(this.word);
 
+    let s1 = this.word.split(''); // convert string into array
+    let s2 = s1.reverse(); //reverse function
+    let rMessage = s2.join('');// convert array into string
+    this.res = rMessage;
+}
 
 }
