@@ -4,7 +4,7 @@
         Welcome to LWC Training <br/>
        
         <input type="text" id="text-input-id-47" placeholder="Placeholder text…" required="" class="slds-input" onchange={valChange}/><br/> <br/>
-        <button class="slds-button slds-button_brand">Submit</button>
+        <button class="slds-button slds-button_brand" onclick={callRest}>Submit</button>
     </div>
 
     <div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_default">
@@ -13,6 +13,15 @@
         {city} <br/>
         {country}<br/>
     </div>
+<div class="slds-text-title_caps slds-text-align_center slds-text-color_success slds-box slds-theme_default">
+API Callout
 
+{id}<br/>
+{setup}<br/>
+{punchline} <br/>
+{type} 
+
+
+</div>
 
 </template>
