@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="One Way Data Binding with Primitive Data and Object" icon="action:user">
+      <div class="slds-m-around_medium">
+        <div>
+            {greeting} Friends! <br/>
+            My Name is <b>{fullName}</b> and I have <b>{certNum}</b> in Salesforce. <br/>
+            I am from <b>{location.country}</b> and I Live in <b>{location.city}</b>, {location.state}, <b>{location.zipCode}</b>. <br/>
+            My Favorite Color is <b>{extra.color}</b>. I like {extra.hobby}. My Favorite food is <b>{extra.food}</b>.
+        </div>
+
+      </div>
+    
+    </lightning-card> 
+    
+</template>

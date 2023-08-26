@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Assignment #1" icon-name="action:check">
+        <div class="slds-m-around_medium">
+            <lightning-input 
+               type="number" 
+                value=""
+                label="Number 1"
+                onchange={event1}
+                placeholder="Enter number...">
+
+            </lightning-input>
+            <lightning-input 
+            type="number" 
+             value=""
+             label="Number 2"
+             onchange={event2}
+             placeholder="Enter number...">
+
+         </lightning-input>
+           <div class="slds-m-top_small">
+            The addition of <b>{number1}</b> and <b>{number2}</b> is <b>{result}</b>
+           </div>
+
+        </div>
+
+    </lightning-card>
+    
+</template>

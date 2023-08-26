@@ -1,0 +1,53 @@
+<template>
+    <lightning-card titel="Conditional Rendering with Button" icon-name="action:new_task">
+        <div class="slds-m-around_medium">
+            <lightning-button 
+              variant="brand" 
+              label="Show content" 
+              onclick={handleClick} 
+              class="slds-m-left_x-small">
+            </lightning-button>
+            <lightning-button 
+              variant="destructive" 
+              label="Hide Content" 
+              onclick={handleClickHide} 
+              class="slds-m-left_x-small">
+            </lightning-button>
+            
+            <lightning-button 
+            variant="success" 
+            label="Show/Hide" 
+            onclick={handleClickShowHide} 
+            class="slds-m-left_x-small">
+          </lightning-button>
+            <div class="slds-m-top_small">
+                Please click the one of the above button to see or hide the content below.
+            </div>
+         
+            <hr>
+            <div>
+                <b><u>This is Input type Toggle</u></b>
+            </div>
+            <lightning-input 
+              type="toggle" 
+              label="Toggle to show or hide the content"
+              onchange={handleChange}>
+            </lightning-input>
+            <hr>
+            <template if:true={showContent} >
+                <div class="slds-m-top_medium">
+                    Hello, <br>
+                    I am learning LWC at TechPro. It is fun!
+                    
+                </div>
+                <div>
+                    You have just clicked on the <b>{labelName}</b> button.
+                </div>
+
+            </template>
+            
+        </div>
+
+    </lightning-card>
+    
+</template>

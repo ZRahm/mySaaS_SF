@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Condidiontal Rendering" icon-name="action:change_record_type">
+        <div class="slds-m-around_medium">
+            <template if:true={showContent}>
+                Hello, I am visible because the local property showContent is True.
+            </template>
+            <template if:false={showContent}>
+                Hello, I am visible because the local property showContent is False.
+            </template><br/>
+             I am outside of the template, no matter tRue or false I am visible.
+
+        </div>
+
+    </lightning-card>
+</template>

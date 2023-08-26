@@ -5,9 +5,11 @@ export default class HelloWorld extends LightningElement {
       //Local - Variables that are available only in this component
       //Public Properties: vars that are available for external component as well. We will focus on this in chapter 5. component communication
 
-       name = "Salesforce Developer";
+       name = "Zarina";
        title = "Salesforce DEv with Certificate";
        experience = 3; 
+       certs = 3;
+       greeting = "Hello World!";
        fruits = ["apple", "banana", "pear", "orange"];
        location = {
         city : "Boston",

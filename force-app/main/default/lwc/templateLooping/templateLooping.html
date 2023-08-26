@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Template Looping" icon-name="utility:add_source">
+        <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_medium">
+                <u>LIST OF SF CERTIFICATIONS</u>
+            </p>
+            <template for:each={certifications} for:item="cert">
+                <div key={cert}>
+                    <b>{cert}</b>
+
+                </div>
+
+            </template>
+
+        </div>
+
+    </lightning-card>
+    
+</template>
