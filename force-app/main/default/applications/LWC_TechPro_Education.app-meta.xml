@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>lwc_Image</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This is the Lightning App where I will store all of my components during this module</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>LWC TechPro Education</label>
+    <navType>Standard</navType>
+    <tabs>Hello_World</tabs>
+    <tabs>Lightning_Base_Components</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>LWC_TechPro_Education_UtilityBar</utilityBar>
+</CustomApplication>
