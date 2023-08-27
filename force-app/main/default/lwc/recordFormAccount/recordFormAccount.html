@@ -4,11 +4,20 @@
             <lightning-record-form
               object-api-name={objectName}
               record-id={recordId}
-              fields={fields}>
-            </lightning-record-form>
+              fields={fields}
+              mode="view"
+              columns=2
+              onsuccess={showSuccessMessage}
+              onerror={showErrorMsg}
+              onload={showLoadMsg}
+              onsubmit={showSubmitMsg}>
               
-
             </lightning-record-form>
+              <div>
+                {testMessage}
+              </div>
+
+            
 
         </div>
 
