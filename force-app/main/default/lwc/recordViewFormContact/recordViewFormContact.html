@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Lightning Record View Form - Contact" icon-name="standard:contact">
+        <div class="slds-m-around_medium">
+            <lightning-record-view-form
+             object-api-name={objectName}
+              record-id={recordId}>
+              <lightning-output-field field-name={fields.firstName}></lightning-output-field>
+              <lightning-output-field field-name={fields.lastName}></lightning-output-field>
+              <lightning-output-field field-name={fields.account}></lightning-output-field>
+              <lightning-output-field field-name={fields.title}></lightning-output-field>
+              <div>
+                <lightning-input 
+              type="toggle" 
+              label="Toggle to show or hide the content"
+              onchange={handleChange}>
+            </lightning-input>
+              </div>
+              <template if:true={showContent}>
+                <lightning-output-field field-name={fields.email}></lightning-output-field>
+
+              </template>
+              
+              <lightning-output-field field-name={fields.phone}></lightning-output-field>
+              <lightning-output-field field-name={fields.department}></lightning-output-field>
+             </lightning-record-view-form>
+        </div>
+
+    </lightning-card>
+    
+</template>
