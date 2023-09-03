@@ -2,6 +2,15 @@
     <lightning-card title="getObjectInfoAdapter - Opportunity" icon-name="standard:opportunity">
         <div class="slds-m-around_medium">
            The Kitchen Appliances Record Type id is: <b>{krtId}</b> 
+           <lightning-combobox
+            
+           label="Stage Name Picklist Values for Kitchen Appliances Record Type"
+           value={value}
+           placeholder="Select Stage..."
+           options={options}
+           onchange={handleChange} >
+      </lightning-combobox>
+      <p>Selected Industry Value for Customer Record Type is: <b>{selectValue}</b></p>
         </div>
     </lightning-card>
     
