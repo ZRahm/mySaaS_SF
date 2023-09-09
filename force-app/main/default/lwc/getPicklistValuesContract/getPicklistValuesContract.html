@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="getPicklistValues Adapter - Contract" icon-name="standard:contract">
+        <div class="slds-m-around_medium">
+            <p>The Renewal Contract Type Id is: <b>{contrTId}</b></p><br/><br/>
+            <lightning-combobox
+                label="Contract Type Picklist Values for Renewal Record Type"
+                value={value}
+                placeholder="Select Stage..."
+                options={options}
+                onchange={handleChange} >
+           </lightning-combobox>
+           <p>The Selected contract type is: <b>{options}</b></p>
+        </div>
+    </lightning-card>
+    
+</template>

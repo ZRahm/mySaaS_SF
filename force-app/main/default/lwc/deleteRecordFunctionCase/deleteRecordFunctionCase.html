@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="deleteRecord Function - Case" icon-name="standard:case">
+        <div class="slds-m-around_medium">
+            <form class="deleteCase">
+                <lightning-input
+                  type="text"
+                  placeholder="Enter Record Id"
+                  label="Please enter the record Id to delete a Case Record"
+                  value={recordId}
+                  onchange={changeHandler}>
+               </lightning-input>
+            </form>
+            <div class="slds-m-top_medium">
+                <lightning-button
+                   label="Delete Case"
+                   variant="destructive"
+                   onclick={deleteCaseRecord}>
+                </lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+    
+</template>
