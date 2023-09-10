@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Wired Apex With Parameters HW" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            
+                <lightning-input
+                   label="Type your Type of Account"
+                   value={type}
+                   class="slds-m-bottom_small"
+                   onkeyup={changeHandler}>
+                </lightning-input>
+                <lightning-datatable
+                  key-field="id"
+                  data={accounts.data}
+                  columns={columns}
+                  show-row-number-column>
+                </lightning-datatable>
+
+            
+        </div>
+    </lightning-card>
+    
+</template>

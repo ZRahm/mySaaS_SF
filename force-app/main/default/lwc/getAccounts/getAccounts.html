@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Wire - Apex without parameters - get Accounts"    icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <template if:true ={accounts.data}>
+                <lightning-datatable
+                    key-field="id"
+                    data={accounts.data}
+                    columns={columns}>
+              </lightning-datatable>
+
+            </template>
+           
+        </div>
+
+    </lightning-card>
+    
+</template>

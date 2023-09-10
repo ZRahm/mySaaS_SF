@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Get Contacts HW" icon-name="standard:contact">
+        <div class="slds-m-around_m">
+            <template if:true={contacts.data}>
+                <lightning-datatable
+                  key-field="id"
+                   data={contacts.data}
+                   columns={columns}>
+                </lightning-datatable>
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>
