@@ -26,8 +26,8 @@ public static List<Account> searchAccounts(String searchKey){
             ORDER BY Name ASC
             LIMIT 20];
 }
-
-@AuraEnabled 
+//HW - my own method
+@AuraEnabled
 public static List<Account> getTypes(String type){
    return [SELECT Id, Name, Type
             FROM Account
@@ -35,5 +35,26 @@ public static List<Account> getTypes(String type){
              WITH SECURITY_ENFORCED];
 }
 
+//Use-Case: Get a;; the accounts by their Type given in dropdown list(Combobox)
+@AuraEnabled 
+public static List<Account> getAccountsByType(String type){
+   return[SELECT Id, Name, Type, Industry, Phone
+           FROM Account
+           WHERE Type =: type
+           WITH SECURITY_ENFORCED 
+           ORDER BY Name ASC
+           LIMIT 20];
+}
+
+//Get teh most recent accounts
+@AuraEnabled(cacheable=true)
+public static List<Account> getRecentAccounts(){
+   return [SELECT Id, Name, Type, Industry, Phone, AnnualRevenue
+            FROM Account
+            WITH SECURITY_ENFORCED
+            ORDER BY CreatedDate DESC
+            LIMIT 10];
+
+}
 
 }
