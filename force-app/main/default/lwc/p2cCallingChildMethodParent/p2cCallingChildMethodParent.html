@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="P2C Calling Child Method On Parent"         icon-name="action:filter">
+        <div class="slds-m-around_medium">
+            <div class="slds-m-bottom_medium">
+                Hello, You are in Parent Component, I will call a method from the child component and display my child component here on the parent site.
+            </div>
+            <lightning-button
+               label="Reset Slider"
+               variant="brand"
+               class="slds-align_absolute-center"
+               onclick={sliderHandler}>
+            </lightning-button>
+            <div class="slds-m-top_medium slds-align_absolute-center">
+                <!-- in order to see the slider i need to call my child method -->
+                <c-p2c-calling-child-method-child
+                   msg={message}>
+                </c-p2c-calling-child-method-child>
+            </div>
+
+        </div>
+
+    </lightning-card> 
+    
+</template>
